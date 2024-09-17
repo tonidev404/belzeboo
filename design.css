@@ -1,0 +1,53 @@
+@font-face {
+    font-family: "Main";
+    src: url(./Resources/mainFont.ttf);
+}
+@font-face {
+    font-family: "Secondary";
+    src: url(./Resources/secondaryFont.ttf);
+}
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+body{
+    background-color: rgb(8, 8, 8);
+    cursor: url(Resources/cursor.svg), auto;
+    height: 100%;
+}
+.page-header{
+    height: 80vh;
+    width: 100%;
+    box-sizing: border-box;
+    border-bottom: 1px solid rgba(107, 107, 107, 0.329);
+    background: url(Resources/header-background.gif) no-repeat;
+    background-size: cover;
+    background-position: 50%;
+}
+.filter{
+    background-color: #00000075;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.page-title{
+    font-family: "Main";
+    font-size: 6vw;
+    color: #6d0b0b;
+}
+.satanic{
+    font-family: "Main";
+    font-weight: bold;
+    color: #6d0b0b;
+    padding: 0px 15px;
+}
+.more-info-title{
+    font-family: "Secondary";
+    font-size: 2vw;
+    color: #6d0b0b;
+}
