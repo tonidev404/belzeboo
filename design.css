@@ -16,6 +16,7 @@ body{
     background-color: rgb(8, 8, 8);
     cursor: url(Resources/cursor.svg), auto;
     height: 100%;
+    overflow-x: hidden;
 }
 .page-header{
     height: 80vh;
@@ -50,4 +51,71 @@ body{
     font-family: "Secondary";
     font-size: 2vw;
     color: #6d0b0b;
+}
+.page-buttons{
+    height: 10vh;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    background-color: rgb(12, 12, 12);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.page-logo{
+    display: none;
+    font-family: "Main";
+    color: #6d0b0b;
+    font-size: 2vw;
+    margin-left: 15px;
+}
+.page-buttons-logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.buttons-ul{
+    display: flex;
+    list-style: none;
+}
+.button{
+    font-size: 1.2vw;
+    padding: 7px;
+    margin: 5px;
+    border: 1px solid #6d0b0b;
+    font-family: "Secondary";
+    color: #6d0b0b;
+    cursor: url(Resources/pointer.svg), auto;
+    position: relative;
+    display: block;
+    animation: buttonWithHeader .3s forwards;
+}
+.button-with-logo{
+    display: block;
+    animation: buttonWithoutHeader .3s forwards;
+
+}
+@keyframes buttonWithHeader {
+    from{
+        transform: translateY(-75px);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+
+@keyframes buttonWithoutHeader {
+    from{
+        transform: translateX(75px);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+
+
+
+.prueba{
+    height: 100000vh;
 }
